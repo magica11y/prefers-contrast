@@ -2,12 +2,12 @@
 
 const contrastPreferences: {|
   NO_PREFERENCE: string,
-  HIGH: string,
-  LOW: string,
+  MORE: string,
+  LESS: string,
 |} = Object.freeze({
   NO_PREFERENCE: 'no-preference',
-  HIGH: 'high',
-  LOW: 'low',
+  MORE: 'more',
+  LESS: 'less',
 });
 
 export type ContrastPreference = $Values<typeof contrastPreferences>;

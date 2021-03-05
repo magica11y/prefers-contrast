@@ -17,12 +17,12 @@ describe('prefersContrast()', () => {
         expectedOutput: 'no-preference',
       },
       {
-        testInput: contrastPreferences.HIGH,
-        expectedOutput: 'high',
+        testInput: contrastPreferences.MORE,
+        expectedOutput: 'more',
       },
       {
-        testInput: contrastPreferences.LOW,
-        expectedOutput: 'low',
+        testInput: contrastPreferences.LESS,
+        expectedOutput: 'less',
       },
     ];
 
