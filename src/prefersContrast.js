@@ -6,15 +6,15 @@ import contrastPreferences, { type ContrastPreference } from './contrastPreferen
 
 const contrastPreferenceValues: Array<ContrastPreference> = [
   contrastPreferences.NO_PREFERENCE,
-  contrastPreferences.HIGH,
-  contrastPreferences.LOW,
+  contrastPreferences.MORE,
+  contrastPreferences.LESS,
 ];
 
 /**
  * Detects user’s preferences for contrast
  * using CSS3 Media Queries level 5 specification for `'prefers-contrast'`.
  *
- * @returns Either 'no-preference', 'high', 'low' or `null`
+ * @returns Either 'no-preference', 'more', 'less' or `null`
  * @see https://drafts.csswg.org/mediaqueries-5/#prefers-contrast
  */
 const prefersContrast = (): ?ContrastPreference => {
