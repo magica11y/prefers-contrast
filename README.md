@@ -18,11 +18,10 @@
 
 # :sparkles: Introduction
 
-Quoting from the [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) [level 5](https://drafts.csswg.org/mediaqueries-5)
+Quoting from the [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) [level 5](https://www.w3.org/TR/mediaqueries-5)
 [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries) specfication…
 
-> The [`'prefers-contrast'`](https://drafts.csswg.org/mediaqueries-5/#prefers-contrast) media feature
-> indicates whether the content is displayed normally, or whether colors have been inverted.
+> The [`'prefers-contrast'`](https://drafts.csswg.org/mediaqueries-5/#prefers-contrast) media feature is used to detect if the user has requested the system increase or decrease the amount of contrast between adjacent colors. For example, many users have difficulty reading text that has a small difference in contrast to the text background and would prefer a larger contrast.
 
 :high_brightness: **`prefersContrast()`** is part of :crystal_ball: [**Magica11y**](https://magica11y.github.io),
 which provides a suite of functions to detect “user-preference” and “environment” media features.
@@ -36,10 +35,10 @@ which provides a suite of functions to detect “user-preference” and “envir
 
 In addition to `prefersContrast()`, [Magica11y](https://magica11y.github.io) also provides…
 
-  * :new_moon: [`invertedColors()`](https://github.com/magica11y/inverted-colors)
   * :tv: [`environmentBlending()`](https://github.com/magica11y/environment-blending)
-  * :candle: [`lightLevel()`](https://github.com/magica11y/light-level)
   * :art: [`forcedColors()`](https://github.com/magica11y/forced-colors)
+  * :new_moon: [`invertedColors()`](https://github.com/magica11y/inverted-colors)
+  * ~:candle: [`lightLevel()`](https://github.com/magica11y/light-level)~
   * :last_quarter_moon: [`prefersColorScheme()`](https://github.com/magica11y/prefers-color-scheme)
   * :roller_coaster: [`prefersReducedMotion()`](https://github.com/magica11y/prefers-reduced-motion)
   * :gem: [`prefersReducedTransparency()`](https://github.com/magica11y/prefers-reduced-transparency)
@@ -92,11 +91,11 @@ const useHighContrastColorScheme = (contrastPreference === contrastPreferences.H
 
 The `contrastPreferences` object contains all the possible values supported by the `'prefers-contrast'` media query…
 
-* `contrastPreferences.NO_PREFERENCE` (spec: [`'no-preference'`](https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-contrast-no-preference))
+* `contrastPreferences.NO_PREFERENCE` (spec: [`'no-preference'`](https://www.w3.org/TR/mediaqueries-5/#valdef-media-prefers-contrast-no-preference))
   > Indicates that the user has made no preference known to the system.
-* `contrastPreferences.HIGH` (spec: [`'high'`](https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-contrast-high))
+* `contrastPreferences.HIGH` (spec: [`'high'`](https://www.w3.org/TR/mediaqueries-5/#valdef-media-prefers-contrast-high))
   > Indicates that user has notified the system that they prefer an interface that has a higher level of contrast.
-* `contrastPreferences.LOW` (spec: [`'low'`](https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-contrast-low))
+* `contrastPreferences.LOW` (spec: [`'low'`](https://www.w3.org/TR/mediaqueries-5/#valdef-media-prefers-contrast-low))
   > Indicates that user has notified the system that they prefer an interface that has a lower level of contrast.
 * `null`
   > The user’s preference could not be determined.
