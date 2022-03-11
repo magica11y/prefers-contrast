@@ -2,7 +2,7 @@
 ==================
 > Detects user’s preferences for contrast using the `prefers-contrast` CSS3 level 5 media query.
 
-[![Travis](https://img.shields.io/travis/com/magica11y/prefers-contrast.svg?style=for-the-badge)](https://travis-ci.com/magica11y/prefers-contrast)
+[![Travis](https://img.shields.io/travis/com/magica11y/prefers-contrast.svg?style=for-the-badge)](https://app.travis-ci.com/github/magica11y/prefers-contrast)
 [![NPM](https://img.shields.io/npm/v/@magica11y/prefers-contrast.svg?style=for-the-badge "NPM")](https://www.npmjs.com/package/@magica11y/prefers-contrast)
 [![Bundlephobia](https://img.shields.io/bundlephobia/min/@magica11y/prefers-contrast.svg?style=for-the-badge "Bundle size (minified)")](https://bundlephobia.com/result?p=@magica11y/prefers-contrast)
 [![Bundlephobia](https://img.shields.io/bundlephobia/minzip/@magica11y/prefers-contrast.svg?style=for-the-badge "Bundle size (minified+gzipped)")](https://bundlephobia.com/result?p=@magica11y/prefers-contrast)
