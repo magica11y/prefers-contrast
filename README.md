@@ -2,27 +2,26 @@
 ==================
 > Detects user’s preferences for contrast using the `prefers-contrast` CSS3 level 5 media query.
 
-[![Travis](https://img.shields.io/travis/com/magica11y/prefers-contrast.svg?style=for-the-badge)](https://travis-ci.com/magica11y/prefers-contrast)
-[![npm](https://img.shields.io/npm/v/@magica11y/prefers-contrast.svg?style=for-the-badge "NPM")](https://www.npmjs.com/package/@magica11y/prefers-contrast)
+[![Travis](https://img.shields.io/travis/com/magica11y/prefers-contrast.svg?style=for-the-badge)](https://app.travis-ci.com/github/magica11y/prefers-contrast)
+[![NPM](https://img.shields.io/npm/v/@magica11y/prefers-contrast.svg?style=for-the-badge "NPM")](https://www.npmjs.com/package/@magica11y/prefers-contrast)
 [![Bundlephobia](https://img.shields.io/bundlephobia/min/@magica11y/prefers-contrast.svg?style=for-the-badge "Bundle size (minified)")](https://bundlephobia.com/result?p=@magica11y/prefers-contrast)
 [![Bundlephobia](https://img.shields.io/bundlephobia/minzip/@magica11y/prefers-contrast.svg?style=for-the-badge "Bundle size (minified+gzipped)")](https://bundlephobia.com/result?p=@magica11y/prefers-contrast)
-[![Coveralls](https://img.shields.io/coveralls/magica11y/prefers-contrast.svg?style=for-the-badge "Test coverage status")](https://coveralls.io/r/magica11y/prefers-contrast)
-[![David](https://img.shields.io/david/magica11y/prefers-contrast.svg?style=for-the-badge "Dependencies")](https://david-dm.org/magica11y/prefers-contrast)
-[![David](https://img.shields.io/david/dev/magica11y/prefers-contrast.svg?style=for-the-badge "Dev Dependencies")](https://david-dm.org/magica11y/prefers-contrast?type=dev)
-[![node](https://img.shields.io/node/v/@magica11y/prefers-contrast.svg?style=for-the-badge "Node engine")](https://www.npmjs.com/package/@magica11y/prefers-contrast)
+[![Coveralls](https://img.shields.io/coveralls/github/magica11y/prefers-contrast.svg?style=for-the-badge "Test coverage status")](https://coveralls.io/github/magica11y/prefers-contrast)
+[![David DM](https://img.shields.io/david/magica11y/prefers-contrast.svg?style=for-the-badge "Dependencies")](https://david-dm.org/magica11y/prefers-contrast)
+[![David DM](https://img.shields.io/david/dev/magica11y/prefers-contrast.svg?style=for-the-badge "Dev Dependencies")](https://david-dm.org/magica11y/prefers-contrast?type=dev)
+[![NodeJS](https://img.shields.io/node/v/@magica11y/prefers-contrast.svg?style=for-the-badge "Node engine")](https://www.npmjs.com/package/@magica11y/prefers-contrast)
 [![License](https://img.shields.io/github/license/magica11y/prefers-contrast.svg?style=for-the-badge "MIT license")](LICENSE.md)
-![Greenkeeper](https://badges.greenkeeper.io/magica11y/prefers-contrast.svg?style=flat-square "Greenkeeper")
+[![Snyk](https://img.shields.io/snyk/vulnerabilities/github/magica11y/prefers-contrast?style=for-the-badge "Snyk vulnerabilities status")](https://snyk.io/test/github/magica11y/prefers-contrast?targetFile=package.json)
 
 [![Magica11y cover](https://cdn.jsdelivr.net/gh/magica11y/cauldron@1.0.7/assets/Magica11y-cover.jpg "Magica11y cover")](https://magica11y.github.io)
 
 
 # :sparkles: Introduction
 
-Quoting from the [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) [level 5](https://drafts.csswg.org/mediaqueries-5)
+Quoting from the [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) [level 5](https://www.w3.org/TR/mediaqueries-5)
 [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries) specfication…
 
-> The [`'prefers-contrast'`](https://drafts.csswg.org/mediaqueries-5/#prefers-contrast) media feature
-> indicates whether the content is displayed normally, or whether colors have been inverted.
+> The [`'prefers-contrast'`](https://drafts.csswg.org/mediaqueries-5/#prefers-contrast) media feature is used to detect if the user has requested the system increase or decrease the amount of contrast between adjacent colors. For example, many users have difficulty reading text that has a small difference in contrast to the text background and would prefer a larger contrast.
 
 :high_brightness: **`prefersContrast()`** is part of :crystal_ball: [**Magica11y**](https://magica11y.github.io),
 which provides a suite of functions to detect “user-preference” and “environment” media features.
@@ -36,10 +35,10 @@ which provides a suite of functions to detect “user-preference” and “envir
 
 In addition to `prefersContrast()`, [Magica11y](https://magica11y.github.io) also provides…
 
-  * :new_moon: [`invertedColors()`](https://github.com/magica11y/inverted-colors)
   * :tv: [`environmentBlending()`](https://github.com/magica11y/environment-blending)
-  * :candle: [`lightLevel()`](https://github.com/magica11y/light-level)
   * :art: [`forcedColors()`](https://github.com/magica11y/forced-colors)
+  * :new_moon: [`invertedColors()`](https://github.com/magica11y/inverted-colors)
+  * ~:candle: [`lightLevel()`](https://github.com/magica11y/light-level)~
   * :last_quarter_moon: [`prefersColorScheme()`](https://github.com/magica11y/prefers-color-scheme)
   * :roller_coaster: [`prefersReducedMotion()`](https://github.com/magica11y/prefers-reduced-motion)
   * :gem: [`prefersReducedTransparency()`](https://github.com/magica11y/prefers-reduced-transparency)
@@ -84,7 +83,7 @@ const useHighContrastColorScheme = (contrastPreference === prefersContrast.contr
 … or as an ES module…
 
 ```js
-import prefersContrast, { contrastPreferences } from 'magica11y/prefersContrast';
+import prefersContrast, { contrastPreferences } from '@magica11y/prefersContrast';
 
 const contrastPreference = prefersContrast();
 const useHighContrastColorScheme = (contrastPreference === contrastPreferences.MORE);
@@ -92,11 +91,11 @@ const useHighContrastColorScheme = (contrastPreference === contrastPreferences.M
 
 The `contrastPreferences` object contains all the possible values supported by the `'prefers-contrast'` media query…
 
-* `contrastPreferences.NO_PREFERENCE` (spec: [`'no-preference'`](https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-contrast-no-preference))
+* `contrastPreferences.NO_PREFERENCE` (spec: [`'no-preference'`](https://www.w3.org/TR/mediaqueries-5/#valdef-media-prefers-contrast-no-preference))
   > Indicates that the user has made no preference known to the system.
-* `contrastPreferences.MORE` (spec: [`'more'`](https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-contrast-more))
+* `contrastPreferences.HIGH` (spec: [`'high'`](https://www.w3.org/TR/mediaqueries-5/#valdef-media-prefers-contrast-high))
   > Indicates that user has notified the system that they prefer an interface that has a higher level of contrast.
-* `contrastPreferences.LESS` (spec: [`'less'`](https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-contrast-less))
+* `contrastPreferences.LOW` (spec: [`'low'`](https://www.w3.org/TR/mediaqueries-5/#valdef-media-prefers-contrast-low))
   > Indicates that user has notified the system that they prefer an interface that has a lower level of contrast.
 * `null`
   > The user’s preference could not be determined.
@@ -131,6 +130,6 @@ type (i.e. `ContrastPreference`). So using the `?` prefix to indicate nullable t
 
 See [LICENSE.md](LICENSE.md) for more details.
 
-Handcrafted with :heart: by [Rishabh Rao](https://github.com/rishabhsrao).
+Handcrafted with :heart: by [Rishabh](https://rishabh.ink).
 
-[![Twitter](https://img.shields.io/twitter/follow/rishabhsrao.svg?style=social)](https://twitter.com/rishabhsrao)
+[![Twitter](https://img.shields.io/twitter/follow/rishabh_ink.svg?style=social)](https://twitter.com/rishabh_ink)

@@ -1,8 +1,9 @@
 {
   "name": "@magica11y/prefers-contrast",
   "homepage": "https://magica11y.github.io",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "Detects user’s preferences for contrast using the 'prefers-contrast' CSS3 level 5 media query.",
+  "main": "lib/index.js",
   "module": "lib/index.js",
   "browser": "dist/magica11y.prefersContrast.js",
   "scripts": {
@@ -51,19 +52,21 @@
   },
   "license": "MIT",
   "author": {
-    "name": "Rishabh Rao",
-    "email": "rishabhsrao@gmail.com",
-    "url": "https://medium.com/@rishabhsrao"
+    "name": "Rishabh",
+    "email": "rishabh.ink+npm@gmail.com",
+    "url": "https://rishabh.ink"
   },
   "files": [
     "build",
     "dist",
-    "lib"
+    "lib",
+    "src"
   ],
   "dependencies": {
-    "@magica11y/cauldron": "^1.0.11"
+    "@magica11y/match-user-preference": "^1.0.6"
   },
   "devDependencies": {
-    "webpack-merge": "^4.2.1"
+    "@magica11y/cauldron": "^1.0.17",
+    "webpack-merge": "^5.8.0"
   }
 }
