@@ -69,7 +69,7 @@ You can also include `prefersContrast()` from a CDN on your page, such as [jsDel
 
 ```js
 var contrastPreference = window.magica11y.prefersContrast.default();
-var useHighContrastColorScheme = (contrastPreference === window.magica11y.prefersContrast.contrastPreferences.HIGH);
+var useHighContrastColorScheme = (contrastPreference === window.magica11y.prefersContrast.contrastPreferences.MORE);
 ```
 
 … or as a CommonJS module…
@@ -77,7 +77,7 @@ var useHighContrastColorScheme = (contrastPreference === window.magica11y.prefer
 ```js
 const prefersContrast = require('@magica11y/prefers-contrast');
 const contrastPreference = prefersContrast.default();
-const useHighContrastColorScheme = (contrastPreference === prefersContrast.contrastPreferences.HIGH);
+const useHighContrastColorScheme = (contrastPreference === prefersContrast.contrastPreferences.MORE);
 ```
 
 … or as an ES module…
@@ -86,7 +86,7 @@ const useHighContrastColorScheme = (contrastPreference === prefersContrast.contr
 import prefersContrast, { contrastPreferences } from '@magica11y/prefersContrast';
 
 const contrastPreference = prefersContrast();
-const useHighContrastColorScheme = (contrastPreference === contrastPreferences.HIGH);
+const useHighContrastColorScheme = (contrastPreference === contrastPreferences.MORE);
 ```
 
 The `contrastPreferences` object contains all the possible values supported by the `'prefers-contrast'` media query…
