@@ -24,6 +24,10 @@ describe('prefersContrast()', () => {
         testInput: contrastPreferences.LESS,
         expectedOutput: 'less',
       },
+      {
+        testInput: contrastPreferences.CUSTOM,
+        expectedOutput: 'custom',
+      },
     ];
 
     testParameters.forEach((testParameter: TestParameter) => {

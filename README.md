@@ -97,6 +97,9 @@ The `contrastPreferences` object contains all the possible values supported by t
   > Indicates that user has notified the system that they prefer an interface that has a higher level of contrast.
 * `contrastPreferences.LOW` (spec: [`'low'`](https://www.w3.org/TR/mediaqueries-5/#valdef-media-prefers-contrast-low))
   > Indicates that user has notified the system that they prefer an interface that has a lower level of contrast.
+* `contrastPreferences.CUSTOM` (spec: [`'custom'`](https://www.w3.org/TR/mediaqueries-5/#valdef-media-prefers-contrast-custom))
+  > Indicates that the user has indicated wanting a specific set of colors to be used,
+  > but the contrast implied by these particular colors is such that neither `more` nor `less` match.
 * `null`
   > The user’s preference could not be determined.
 

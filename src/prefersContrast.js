@@ -8,6 +8,7 @@ const contrastPreferenceValues: Array<ContrastPreference> = [
   contrastPreferences.NO_PREFERENCE,
   contrastPreferences.MORE,
   contrastPreferences.LESS,
+  contrastPreferences.CUSTOM,
 ];
 
 /**
