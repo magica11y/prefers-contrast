@@ -16,6 +16,6 @@ jobs:
           node-version: '22.x'
           registry-url: 'https://registry.npmjs.org'
           scope: '@magica11y'
-      - run: yarn ci && yarn npm publish --access public
+      - run: yarn && yarn ci && yarn npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
