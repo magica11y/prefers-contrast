@@ -5,49 +5,31 @@ import mockWindowMatchMedia from '@magica11y/match-user-preference/lib/testing/m
 import prefersContrast, { contrastPreferences, type ContrastPreference } from '../src';
 
 describe('prefersContrast()', () => {
-  it('returns a contrast preference when media-query matches', () => {
-    type TestParameter = {|
-      testInput: ContrastPreference,
-      expectedOutput: ContrastPreference,
-    |};
+  it.each`
+    testInput                            | expectedOutput
+    ${contrastPreferences.NO_PREFERENCE} | ${'no-preference'}
+    ${contrastPreferences.MORE}          | ${'more'}
+    ${contrastPreferences.LESS}          | ${'less'}
+    ${contrastPreferences.CUSTOM}        | ${'custom'}
+  `('returns contrast preference as "$expectedOutput"', ({ testInput, expectedOutput }) => {
+    window.matchMedia = jest
+      .fn()
+      .mockImplementation(() => mockWindowMatchMedia(true, `(prefers-contrast: ${testInput})`));
 
-    const testParameters: Array<TestParameter> = [
-      {
-        testInput: contrastPreferences.NO_PREFERENCE,
-        expectedOutput: 'no-preference',
-      },
-      {
-        testInput: contrastPreferences.MORE,
-        expectedOutput: 'more',
-      },
-      {
-        testInput: contrastPreferences.LESS,
-        expectedOutput: 'less',
-      },
-      {
-        testInput: contrastPreferences.CUSTOM,
-        expectedOutput: 'custom',
-      },
-    ];
+    const contrastPreference: ?ContrastPreference = prefersContrast();
 
-    testParameters.forEach((testParameter: TestParameter) => {
-      window.matchMedia = jest
-        .fn()
-        .mockImplementation(() => mockWindowMatchMedia(true, `(prefers-contrast: ${testParameter.testInput})`));
+    expect(contrastPreference).toEqual(expectedOutput);
 
-      const contrastPreference = prefersContrast();
-
-      expect(contrastPreference).toEqual(testParameter.expectedOutput);
-
-      window.matchMedia.mockClear();
-    });
+    window.matchMedia.mockClear();
   });
 
   it('returns "null" when preference cannot be determined', () => {
     window.matchMedia = jest.fn().mockImplementation(() => mockWindowMatchMedia(false, 'not all'));
 
-    const contrastPreference = prefersContrast();
+    const contrastPreference: ?ContrastPreference = prefersContrast();
 
     expect(contrastPreference).toEqual(null);
+
+    window.matchMedia.mockClear();
   });
 });
