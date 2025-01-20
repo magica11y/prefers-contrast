@@ -2,16 +2,13 @@
 ==================
 > Detects user’s preferences for contrast using the `prefers-contrast` CSS3 level 5 media query.
 
-[![Travis](https://img.shields.io/travis/com/magica11y/prefers-contrast.svg?style=for-the-badge)](https://app.travis-ci.com/github/magica11y/prefers-contrast)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/magica11y/prefers-contrast/npm-tag-publish.yml?style=for-the-badge&logo=github&link=https%3A%2F%2Fgithub.com%2Fmagica11y%2Fprefers-contrast%2Factions%2Fworkflows%2Fnpm-tag-publish.yml)](https://github.com/magica11y/prefers-contrast/actions/workflows/npm-tag-publish.yml)
 [![NPM](https://img.shields.io/npm/v/@magica11y/prefers-contrast.svg?style=for-the-badge "NPM")](https://www.npmjs.com/package/@magica11y/prefers-contrast)
 [![Bundlephobia](https://img.shields.io/bundlephobia/min/@magica11y/prefers-contrast.svg?style=for-the-badge "Bundle size (minified)")](https://bundlephobia.com/result?p=@magica11y/prefers-contrast)
 [![Bundlephobia](https://img.shields.io/bundlephobia/minzip/@magica11y/prefers-contrast.svg?style=for-the-badge "Bundle size (minified+gzipped)")](https://bundlephobia.com/result?p=@magica11y/prefers-contrast)
 [![Coveralls](https://img.shields.io/coveralls/github/magica11y/prefers-contrast.svg?style=for-the-badge "Test coverage status")](https://coveralls.io/github/magica11y/prefers-contrast)
-[![David DM](https://img.shields.io/david/magica11y/prefers-contrast.svg?style=for-the-badge "Dependencies")](https://david-dm.org/magica11y/prefers-contrast)
-[![David DM](https://img.shields.io/david/dev/magica11y/prefers-contrast.svg?style=for-the-badge "Dev Dependencies")](https://david-dm.org/magica11y/prefers-contrast?type=dev)
 [![NodeJS](https://img.shields.io/node/v/@magica11y/prefers-contrast.svg?style=for-the-badge "Node engine")](https://www.npmjs.com/package/@magica11y/prefers-contrast)
 [![License](https://img.shields.io/github/license/magica11y/prefers-contrast.svg?style=for-the-badge "MIT license")](LICENSE.md)
-[![Snyk](https://img.shields.io/snyk/vulnerabilities/github/magica11y/prefers-contrast?style=for-the-badge "Snyk vulnerabilities status")](https://snyk.io/test/github/magica11y/prefers-contrast?targetFile=package.json)
 
 [![Magica11y cover](https://cdn.jsdelivr.net/gh/magica11y/cauldron@1.0.7/assets/Magica11y-cover.jpg "Magica11y cover")](https://magica11y.github.io)
 
