@@ -2,7 +2,7 @@
 ==================
 > Detects user’s preferences for contrast using the `prefers-contrast` CSS3 level 5 media query.
 
-[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/magica11y/prefers-contrast/npm-tag-publish.yml?style=for-the-badge&logo=github&link=https%3A%2F%2Fgithub.com%2Fmagica11y%2Fprefers-contrast%2Factions%2Fworkflows%2Fnpm-tag-publish.yml)](https://github.com/magica11y/prefers-contrast/actions/workflows/npm-tag-publish.yml)
+[![Build](https://img.shields.io/github/actions/workflow/status/magica11y/prefers-contrast/test.yml?style=for-the-badge&logo=github)](https://github.com/magica11y/prefers-contrast/actions/workflows/test.yml)
 [![NPM](https://img.shields.io/npm/v/@magica11y/prefers-contrast.svg?style=for-the-badge "NPM")](https://www.npmjs.com/package/@magica11y/prefers-contrast)
 [![Bundlephobia](https://img.shields.io/bundlephobia/min/@magica11y/prefers-contrast.svg?style=for-the-badge "Bundle size (minified)")](https://bundlephobia.com/result?p=@magica11y/prefers-contrast)
 [![Bundlephobia](https://img.shields.io/bundlephobia/minzip/@magica11y/prefers-contrast.svg?style=for-the-badge "Bundle size (minified+gzipped)")](https://bundlephobia.com/result?p=@magica11y/prefers-contrast)
@@ -130,6 +130,6 @@ type (i.e. `ContrastPreference`). So using the `?` prefix to indicate nullable t
 
 See [LICENSE.md](LICENSE.md) for more details.
 
-Handcrafted with :heart: by [Rishabh](https://rishabh.ink).
+Handcrafted with :hearts: by [Rishabh](https://rishabh.ink).
 
 [![Twitter](https://img.shields.io/twitter/follow/rishabh_ink.svg?style=social)](https://twitter.com/rishabh_ink)
