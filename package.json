@@ -66,7 +66,7 @@
     "@magica11y/match-user-preference": "^1.0.6"
   },
   "devDependencies": {
-    "@magica11y/cauldron": "^1.0.17",
+    "@magica11y/cauldron": "^2.1.3",
     "webpack-merge": "^5.10.0"
   }
 }
